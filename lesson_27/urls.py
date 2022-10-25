@@ -27,7 +27,7 @@ urlpatterns = [
     path('hello/', views.hello),
     path('vacancy/', include('vacancies.urls')),
     path('company/', include('companies.urls')),
-]\
+]
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
